@@ -8,12 +8,27 @@
 a {
   text-decoration: none;
 }
-
+hader, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Braadley Hand", Courier, "Segoe Print",sans-serif;
+}
 header {
   width: 90%; /* 横幅90% */
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+header {
+  positon: relative;
+}
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.social i{
+  display: inline-block;
+  margin-left: 20px;
 }
 
 header .heading {
@@ -76,7 +91,7 @@ main {
   text-align: center;
   line-height: 0.6;
 }
-.blog-box{
+.blog-box {
   padding-top: 50px;
 }
 .blog-item {
@@ -87,11 +102,11 @@ main {
   justify-content: flex-start;
 }
 
-.blog-image{
+.blog-image {
   height: 180px;
 }
 
-.blog-date{
+.blog-date {
   font-size: 12px;
   display: inline-block;
 }
@@ -103,8 +118,84 @@ main {
   color: #fff;
   font-size: 11px;
 }
+.pagination {
+  text-align: center;
+  padding-top: 50px;
+}
+.pagination p {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  color: #fff;
+  background-color: #acabab;
+  border-radius: 3px;
+  line-height: 30px;
+}
 .sidebar {
   width: 230px;
+}
+.common-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+.sidebar-contents {
+  padding: 50px 0;
+}
+.popular-text,
+.categories-text {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 5px;
+}
+
+.popular-text:last-child,
+.categories-text:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.instagram .sidebar-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instagram-box {
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.instagram-box:nth-child(odd) {
+  margin: 0 10px 10px 0;
+}
+
+.instagram-box:nth-child(1) {
+  background-image: url(./img/img/airport.jpg);
+}
+
+.instagram-box:nth-child(2) {
+  background-image: url(./img/img/japan.jpg);
+}
+
+.instagram-box:nth-child(3) {
+  background-image: url(./img/img/snow.jpg);
+}
+
+.instagram-box:nth-child(4) {
+  background-image: url(./img/img/japan2.jpg);
+}
+
+.instagram-box:nth-child(5) {
+  background-image: url(./img/img/lake.jpg);
+}
+
+.instagram-box:nth-child(6) {
+  background-image: url(./img/img/road.jpg);
 }
 
 footer {
